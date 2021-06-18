@@ -99,16 +99,17 @@
             // 
             this.testtext.AutoSize = true;
             this.testtext.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.testtext.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.testtext.Location = new System.Drawing.Point(505, 52);
             this.testtext.Name = "testtext";
-            this.testtext.Size = new System.Drawing.Size(66, 15);
+            this.testtext.Size = new System.Drawing.Size(129, 27);
             this.testtext.TabIndex = 1;
             this.testtext.Text = "SpO2 Value";
             this.testtext.Click += new System.EventHandler(this.testtext_Click);
             // 
             // hypbut
             // 
-            this.hypbut.Location = new System.Drawing.Point(504, 234);
+            this.hypbut.Location = new System.Drawing.Point(647, 296);
             this.hypbut.Name = "hypbut";
             this.hypbut.Size = new System.Drawing.Size(131, 23);
             this.hypbut.TabIndex = 2;
@@ -119,7 +120,7 @@
             // normbut
             // 
             this.normbut.Enabled = false;
-            this.normbut.Location = new System.Drawing.Point(504, 263);
+            this.normbut.Location = new System.Drawing.Point(647, 331);
             this.normbut.Name = "normbut";
             this.normbut.Size = new System.Drawing.Size(131, 23);
             this.normbut.TabIndex = 3;
@@ -200,16 +201,17 @@
             // 
             this.prText.AutoSize = true;
             this.prText.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.prText.Location = new System.Drawing.Point(504, 331);
+            this.prText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prText.Location = new System.Drawing.Point(504, 279);
             this.prText.Name = "prText";
-            this.prText.Size = new System.Drawing.Size(65, 15);
+            this.prText.Size = new System.Drawing.Size(129, 27);
             this.prText.TabIndex = 11;
             this.prText.Text = "Pulse Value";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(503, 306);
+            this.label2.Location = new System.Drawing.Point(508, 263);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 13);
             this.label2.TabIndex = 12;
@@ -261,16 +263,17 @@
             // 
             this.inText.AutoSize = true;
             this.inText.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.inText.Location = new System.Drawing.Point(504, 562);
+            this.inText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inText.Location = new System.Drawing.Point(504, 500);
             this.inText.Name = "inText";
-            this.inText.Size = new System.Drawing.Size(93, 15);
+            this.inText.Size = new System.Drawing.Size(185, 27);
             this.inText.TabIndex = 16;
             this.inText.Text = "Inspired O2 Value";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(504, 542);
+            this.label6.Location = new System.Drawing.Point(504, 480);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 13);
             this.label6.TabIndex = 17;
@@ -289,7 +292,7 @@
             // SpGain
             // 
             this.SpGain.Location = new System.Drawing.Point(575, 52);
-            this.SpGain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SpGain.Margin = new System.Windows.Forms.Padding(2);
             this.SpGain.Minimum = new decimal(new int[] {
             100,
             0,
@@ -298,11 +301,12 @@
             this.SpGain.Name = "SpGain";
             this.SpGain.Size = new System.Drawing.Size(60, 20);
             this.SpGain.TabIndex = 19;
+            this.SpGain.Visible = false;
             // 
             // iO2Gain
             // 
-            this.iO2Gain.Location = new System.Drawing.Point(575, 560);
-            this.iO2Gain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iO2Gain.Location = new System.Drawing.Point(504, 535);
+            this.iO2Gain.Margin = new System.Windows.Forms.Padding(2);
             this.iO2Gain.Minimum = new decimal(new int[] {
             100,
             0,
@@ -311,6 +315,7 @@
             this.iO2Gain.Name = "iO2Gain";
             this.iO2Gain.Size = new System.Drawing.Size(60, 20);
             this.iO2Gain.TabIndex = 20;
+            this.iO2Gain.Visible = false;
             // 
             // label7
             // 
@@ -320,20 +325,22 @@
             this.label7.Size = new System.Drawing.Size(57, 13);
             this.label7.TabIndex = 21;
             this.label7.Text = "SpO2 gain";
+            this.label7.Visible = false;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(578, 542);
+            this.label8.Location = new System.Drawing.Point(511, 537);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 13);
             this.label8.TabIndex = 22;
             this.label8.Text = "InO2 gain";
+            this.label8.Visible = false;
             // 
             // pulseGain
             // 
-            this.pulseGain.Location = new System.Drawing.Point(575, 330);
-            this.pulseGain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pulseGain.Location = new System.Drawing.Point(517, 313);
+            this.pulseGain.Margin = new System.Windows.Forms.Padding(2);
             this.pulseGain.Minimum = new decimal(new int[] {
             100,
             0,
@@ -342,15 +349,17 @@
             this.pulseGain.Name = "pulseGain";
             this.pulseGain.Size = new System.Drawing.Size(60, 20);
             this.pulseGain.TabIndex = 23;
+            this.pulseGain.Visible = false;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(576, 306);
+            this.label9.Location = new System.Drawing.Point(514, 315);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(56, 13);
             this.label9.TabIndex = 24;
             this.label9.Text = "Pulse gain";
+            this.label9.Visible = false;
             // 
             // label10
             // 
@@ -387,11 +396,12 @@
             // labelmode
             // 
             this.labelmode.AutoSize = true;
-            this.labelmode.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmode.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmode.ForeColor = System.Drawing.Color.Blue;
             this.labelmode.Location = new System.Drawing.Point(506, 604);
             this.labelmode.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelmode.Name = "labelmode";
-            this.labelmode.Size = new System.Drawing.Size(205, 29);
+            this.labelmode.Size = new System.Drawing.Size(286, 39);
             this.labelmode.TabIndex = 27;
             this.labelmode.Text = "Mode: Normoxia";
             // 
