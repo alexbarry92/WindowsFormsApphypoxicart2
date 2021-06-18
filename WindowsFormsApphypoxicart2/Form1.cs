@@ -262,6 +262,7 @@ namespace WindowsFormsApphypoxicart2
             } 
             hypbut.Enabled = false;
             normbut.Enabled = true;
+            labelmode.ForeColor = Color.Red;
             labelmode.Text = "Mode: Hypoxia";
             modeflag = "1";
             recflag = 0;
@@ -335,6 +336,7 @@ namespace WindowsFormsApphypoxicart2
             }
             hypbut.Enabled = true;
             normbut.Enabled = false;
+            labelmode.ForeColor = Color.Blue;
             labelmode.Text = "Mode: Normoxia";
             modeflag = "0";
             recflag = 0;
